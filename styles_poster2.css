@@ -118,7 +118,24 @@ html, body {
     right: 113px;
     background-image: url(images/shoes.png);
     z-index: 1;
+    animation-name: animateImg;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: infinite; */
 }
+
+/* @keyframes animateImgOne {
+    from {
+        transform: scale(0);
+        /* use scale to transform from the center */
+        /* the default transformation starts from the top-left corner (pivot point) */
+        /* transform: rotate(0); 
+
+    to {
+        transform: scale(1); 
+        transform: rotate(60deg); 
+    }
+} */
 
 .moon {
     width: 399px;
@@ -128,7 +145,22 @@ html, body {
     left: 202px;
     background-image: url(images/moon.png);
     z-index: 3;
+    animation-name: animateImg;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: infinite; */
 }
+
+/* @keyframes animateImgTwo{
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+} */
 
 .real {
     width: 500px;
@@ -159,6 +191,31 @@ html, body {
     background-image: url(images/pineapple.png);
     background-repeat: no-repeat;
     z-index: 6;
+    animation-name: animateImg;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: infinite; */
+}
+
+/* @keyframes animateImgThree {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+} */
+
+@keyframes animateImg {
+    from {
+        transform: scale(0) rotate(0);
+    }
+
+    to {
+        transform: scale(1) rotate(60deg);
+    }
 }
 
 .middle-bottom-line {
